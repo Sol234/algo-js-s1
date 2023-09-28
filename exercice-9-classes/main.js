@@ -17,13 +17,15 @@ console.log(salamèche)
 
 while ((evoli.hp)&&(salamèche.hp)> 0) {
     evoli.attackPokemon(salamèche)
-    console.log(salamèche.hp)
+    let sentence = "salamèche a " + salamèche.hp + " hp"
+    console.log(sentence)
     if (salamèche.hp<=0) {
     console.log("Evoli a gagné le combat !")
     break
     }
     salamèche.attackPokemon(evoli)
-    console.log(evoli.hp)
+    let sentence2 = "évoli a " + evoli.hp + " hp"
+    console.log(sentence2)
     if (evoli.hp<=0) {
         console.log("Salamèche a gagné le combat !")
         break
