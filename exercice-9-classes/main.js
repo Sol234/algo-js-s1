@@ -8,7 +8,9 @@ class Pokemons {
    attackPokemon(adversaire) {
     adversaire.hp -= this.attack-adversaire.defense
    }
-}
+
+
+   }
 
 let evoli = new Pokemons("evoli", 50, 10, 100)
 console.log(evoli)
@@ -24,8 +26,8 @@ while ((evoli.hp)&&(salamèche.hp)> 0) {
     break
     }
     salamèche.attackPokemon(evoli)
-    let sentence2 = "évoli a " + evoli.hp + " hp"
-    console.log(sentence2)
+    let sentencenumbertwo = "évoli a " + evoli.hp + " hp"
+    console.log(sentencenumbertwo)
     if (evoli.hp<=0) {
         console.log("Salamèche a gagné le combat !")
         break
